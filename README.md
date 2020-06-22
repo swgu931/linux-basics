@@ -1,2 +1,2 @@
-# linux-basics-readme.md
+# linux-basics
 linux, basics, command, utility
