@@ -1,0 +1,23 @@
+# how to use crontab
+
+
+[ec2-user@ip-172-31-45-251 ~]$ sudo yum install crontab
+[ec2-user@ip-172-31-45-251 ~]$ sudo service crond start
+
+[ec2-user@ip-172-31-45-251 ~]$ sudo chkconfig crond on
+
+[ec2-user@ip-172-31-45-251 ~]$ crontab -l
+
+[ec2-user@ip-172-31-45-251 ~]$ crontab -e
+-------------------
+MAILTO=sean@panamix.io
+
+*/5 1,2,3 * * * /user/bin/python3 /home/ec2-user/spotify_14.2.py   # 1시 2시 3시 각 12, 24, .... 분에 수행해줘.
+30 18 * * * /user/bin/python3 /home/ec2-user/spotify_14.2.py
+
+-------------------- 
+
+[ec2-user@ip-172-31-45-251 ~]$ crontab -l
+
+[ec2-user@ip-172-31-45-251 ~]$ date
+2020. 06. 22. (월) 00:49:27 UTC
