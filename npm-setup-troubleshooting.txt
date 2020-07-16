@@ -1,0 +1,17 @@
+# npm-setup-troubleshooting.txt
+
+
+$ sudo apt install npm 
+
+다음과 같은 에러가 자주 발생함.
+Can't install npm - Unable to correct problems, you have held broken packages?
+
+
+
+
+## 아래 방법으로 수행
+
+sudo apt install libssl1.0-dev
+sudo apt install nodejs-dev
+sudo apt install node-gyp
+sudo apt install npm
